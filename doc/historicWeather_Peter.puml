@@ -1,0 +1,17 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+title Weather
+
+class historicWeather {
+    +temperature2M: Double
+    +freezingLevelHeight: Double
+    +relativeHumidity2M: Int
+    +rain: Double
+    -time: Date
+    setHistoricWeather()
+    getDataAt()
+}
+
+@enduml
