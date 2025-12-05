@@ -2,7 +2,7 @@
 hide circle
 skinparam classAttributeIconSize 0
 
-title Weather
+title Klassen
 
 class historicWeather {
     +temperature2M: Double
@@ -13,5 +13,17 @@ class historicWeather {
     setHistoricWeather()
     getDataAt()
 }
+
+class currentWeather {
+    +temperature2M: Double
+    +freezingLevelHeight: Double
+    +relativeHumidity2M: Int
+    +rain: Double
+    -time: Date
+    getCurrentWeather()
+    saveCurrentWeather()
+
+}
+
 
 @enduml
